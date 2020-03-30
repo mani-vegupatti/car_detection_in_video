@@ -57,7 +57,12 @@ def main():
                         "Sedan": colour_types.copy(), 
                         "Hatchback": colour_types.copy(), 
                         "Total":0
-                        }            
+                        } 
+        time_row = { "FrameNo":frame_no, 
+                      "Q1": 0,
+                      "Q2": 0,
+                      "Q3": 0
+                      }             
         # Capture the input video frame by frame
         ret, frame = video_capture.read()
         if ret == True:
